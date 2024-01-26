@@ -4,70 +4,70 @@ import {
   faLocationDot,
   faPhone,
 } from '@fortawesome/free-solid-svg-icons'
-import { faXing } from '@fortawesome/free-brands-svg-icons'
 
 export const contact = {
-  phone: '0123 1234567',
-  email: 'info@example.org',
-  xing: 'xing.com/profile/John_Doe',
-  address: { street: 'Hauptstraße', zip: '12345', city: 'Birbenhausen' },
+  phone: '+49 157 8624 6977',
+  email: 'sabrina@lemling.it',
+  address: { street: 'Herrngartenstr.', zip: '65185', city: 'Wiesbaden' },
 }
 
 export const profile = {
   personal: {
-    name: 'John Doe',
-    jobTitle: 'Senior Smartass',
+    name: 'Sabrina Lemling',
+    jobTitle: 'IT Consultant & Software Developer',
     image: profileImage,
-    company: 'Team Chaos GmbH',
+    company: 'Sabrina Lemling IT Consulting',
     insurance: {
       name: 'Hiscox SA',
       address: { street: ' Arnulfstraße 31', city: '80636 München' },
       scope: 'Germany',
     },
-    vatId: 'DE999999999',
+    vatId: '',
   },
   contact: [
     { icon: faPhone, value: contact.phone },
     { icon: faEnvelope, value: contact.email },
-    { icon: faXing, value: contact.xing, type: 'link' },
-    { icon: faLocationDot, value: contact.address.city },
+    { icon: faLocationDot, value: 'Wiesbaden' },
   ],
   competencies: {
-    Area1: [
-      { title: 'Competency 1', level: 100 },
-      { title: 'Competency 2', level: 80 },
+    Dev: [
+      { title: 'React', level: 85 },
+      { title: 'Typescript', level: 75 },
+      { title: 'Node.js', level: 65 },
+      { title: 'Go', level: 25 },
     ],
-    Area2: [
-      { title: 'Competency 3', level: 70 },
-      { title: 'Competency 4', level: 60 },
+    Agile: [
+      { title: 'Scrum', level: 95 },
+      { title: 'Kanban', level: 80 },
+      { title: 'Facilitation', level: 85 },
     ],
   },
   education: [
     {
-      title: 'Master of Disaster',
-      subtitle: 'Chaos University',
-      from: '2012',
+      title: 'Master of Science',
+      subtitle: `University Bielefeld \n Neuroinformatics`,
+      from: '2013',
       to: '2015',
     },
     {
-      title: 'Bachelor of Disaster',
-      subtitle: 'Chaos University',
+      title: 'Bachelor of Science',
+      subtitle: 'University Osnabrück \n Neuropsychology',
       from: '2009',
-      to: '2012',
+      to: '2013',
     },
   ],
   certifications: [
     {
-      title: 'Extended Professional Smartass',
-      subtitle: 'PSA II',
-      authority: 'chaos.org',
-      date: '03/2018',
+      title: 'Scrum Master',
+      subtitle: 'A-CSM',
+      authority: 'Scrum Alliance',
+      date: '07/2019',
     },
     {
-      title: 'Professional Smartass',
-      subtitle: 'PSA I',
-      authority: 'chaos.org',
-      date: '02/2015',
+      title: 'Product Owner',
+      subtitle: 'PSPO II',
+      authority: 'scrum.org',
+      date: '07/2021',
     },
   ],
 }
