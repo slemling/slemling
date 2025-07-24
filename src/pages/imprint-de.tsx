@@ -13,7 +13,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 
 const Imprint = () => {
-  const { insurance, company, vatId } = profile.personal
+  const { company, vatId } = profile.personal
   const { address, phone, email } = contact
   return (
     <React.Fragment>
@@ -83,27 +83,6 @@ const Imprint = () => {
                 <br />
                 {vatId}
               </Text>
-            </>
-          )}
-          {insurance && (
-            <>
-              <Heading size="sm" as="h2">
-                Angaben zur Berufs&shy;haftpflicht&shy;versicherung
-              </Heading>
-              <Text>
-                <strong>Name und Sitz des Versicherers:</strong>
-                <br />
-                {insurance.name}
-                <br />
-                {insurance.address.street}
-                <br />
-                {insurance.address.city}
-              </Text>
-              <Text>
-                <strong>Geltungsraum der Versicherung:</strong>
-                <br />
-                {insurance.scope}
-              </Text>{' '}
             </>
           )}
           <Heading size="sm" as="h2">

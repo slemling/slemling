@@ -1,5 +1,5 @@
 export const settings = {
   useUnderConstructionPage: false,
-  useLocalization: false,
+  useLocalization: true,
   showBanner: false,
 }
